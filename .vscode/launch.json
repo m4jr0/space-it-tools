@@ -1,0 +1,53 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Asset Packer",
+      "type": "lldb",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/target/debug/sid_asset_packer",
+      "windows": {
+        "program": "${workspaceRoot}/target/debug/sid_asset_packer.exe"
+      },
+      "env": { "RUST_BACKTRACE": "1" }
+    },
+    {
+      "name": "Asset Packer tests",
+      "type": "lldb",
+      "request": "launch",
+      "preLaunchTask": "test",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/target/debug/sid_asset_packer",
+      "windows": {
+        "program": "${workspaceRoot}/target/debug/sid_asset_packer.exe"
+      },
+      "env": { "RUST_BACKTRACE": "1" }
+    },
+    {
+      "name": "Aseprite Converter",
+      "type": "lldb",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/target/debug/sid_asset_packer",
+      "windows": {
+        "program": "${workspaceRoot}/target/debug/sid_aseprite_converter.exe"
+      },
+      "env": { "RUST_BACKTRACE": "1" }
+    },
+    {
+      "name": "Aseprite Converter tests",
+      "type": "lldb",
+      "request": "launch",
+      "preLaunchTask": "test",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/target/debug/sid_aseprite_converter",
+      "windows": {
+        "program": "${workspaceRoot}/target/debug/sid_asset_packer.exe"
+      },
+      "env": { "RUST_BACKTRACE": "1" }
+    }
+  ]
+}

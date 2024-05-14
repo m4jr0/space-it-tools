@@ -1,0 +1,15 @@
+# Copyright 2024 m4jr0. All Rights Reserved.
+# Use of this source code is governed by the MIT
+# license that can be found in the LICENSE file.
+
+[workspace]
+members = ["sid_aseprite_converter", "sid_asset_packer"]
+resolver = "2"
+
+[workspace.package]
+authors = ["m4jr0"]
+version = "0.1.0"
+edition = "2021"
+description = " Tools for the Space it, Dummy! video game"
+license-file = "LICENSE"
+readme = "README.md"

@@ -1,0 +1,18 @@
+# Copyright 2024 m4jr0. All Rights Reserved.
+# Use of this source code is governed by the MIT
+# license that can be found in the LICENSE file.
+
+[package]
+name = "sid_asset_packer"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+description.workspace = true
+license-file.workspace = true
+readme.workspace = true
+build = "build.rs"
+
+[dependencies]
+image = "0.25.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
